@@ -14,22 +14,16 @@
     <nav class="navbar navbar-dark bg-primary">
         <div class="container">
             <a href="#" class="navbar-brand">
-                <img src="imgs/rf1.svg" width="100">
+                <img src="imgs/rf1.svg" width="100" height="auto" alt="imagen de logo">
             </a>
+            <!-- boton sandwich -->
+            <button type="button" class="navbar-toogler"></button>
+            <!-- fin boton sandwich -->
         </div>   
     </nav>
     <div class="container">
         <h1>Barra de navegacion</h1>
-        <p>Para la barra de navegacion existe la etiqueta 'nav'. No es recomendable utilizar otras etiquetas (div, container,etc).</p>
-        <p>Viendo en <strong>inspeccionar elemento</strong>, vemos que 'nav' es un contenedor flexbox que tiene un 'justify-content: space-between</p>
-        <p><strong>2. definimos el tema del menu</strong> que fondo va ha tener</p>
-        <p>Cuando pensamos tener un 'nav' oscuro entonces utilizar <strong>navbar-dark</strong> para que programe un color claro de texto y luego agregar un color personal con 'style'</p>
-        <p><strong>3. definimos lo colores con la etiqueta bg-xxx</strong> que viene con bootstrap</p>
-        <p>El '.container' que está dentro de la etiqueta 'nav' se ha convertido en un flexbox, esta clase .container' ya biene preparado para asumir estos cambios. Al inspecionar elemento podemos ver que tiene 'display:flex' y 'justify-content: space-between'</p>
-        <p>Entonces cuando nosotros querramos cambiar la alineación de estos elementos que conforman nuestra barra vamos a tener que aplicar las clases al container, ya este es el 'Padre' de los logotipos, los textos de enlace y otros del navbar. Si no utilizariamos '.container' entonces el padre sería la etiqueta 'nav'.</p>
-        <p><strong>5. El logotipo va con la clase 'navbar-brand' </strong>lo que lo hace responsive</p>
-        <p>Si queremos agrandar el tamaño del logo brand poner el texto del logo dentro de un 'span' el cual es el hijo de 'a'. Al 'span' se le asigna la clase '.h4' o similar</p>
-        <p>Cuando uno quiere agregar imagen para el logo pegar la imagen dentro de la etiqueta 'a' con su clase '.navbar-brand'</p>
+        <p>Para implementar el menu sandwich se aplica la clase '.navbar-toogler' a la etiqueta 'button'. este va ha ser el elemnto disparador a la lista del menu. click en sandwich y sale lista de menu</p>
 
     </div>
 
