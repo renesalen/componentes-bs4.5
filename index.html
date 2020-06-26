@@ -17,6 +17,8 @@
     <p><strong>Los botones </strong>van a ser los elementos disparadores y <strong>el bloque</strong> es el elemento de destino</p>
     <p>Para convetir ese boton en un elemento disparador le asignamos el atributo: <strong>data-toggle="collapse"</strong> al boton</p>
     <p>¿Y a dónde va ha Apuntar o 'disparar'? Para ello le asignamos al boton otra etiqueta: <strong>data-target</strong>. data-toggle nombra al asecino y  data-target nombra a la victima. </p>
+    <p>podemos hacer que la pantalla sea accesible a personas con algun tipo de discapacidad</p>
+    <p>con <strong>aria-expanded=""</strong> le asignamos el estado de la victima. Cuando click en boton se expande otro click se contrae. la pregunta seria: ¿La Victima esta oculta? Cuando las " " estan vacias significa que la victima está oculta (por defecto). Cuando es "true" significa SI está oculta. Cuando es "false" significa que NO esta oculta.</p>
     <section class="container">
         <div class="row p-4 justify-content-center">
             <article class="col-sm-8">
@@ -28,7 +30,7 @@
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#victima">Ver documentacion</button>
+                    <button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#victima" aria-expanded="">Ver documentacion</button>
                 </div>
             </article>
             <article class="col-sm-4">
