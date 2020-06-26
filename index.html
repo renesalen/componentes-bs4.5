@@ -13,7 +13,7 @@
   <body>
     <nav class="navbar navbar-dark bg-primary">
         <div class="container">
-            <a href="#" class="navbar-brand">Resaca</a>
+            <a href="#" class="navbar-brand"><span class="h4">Resaca</span></a>
         </div>   
     </nav>
     <div class="container">
@@ -23,6 +23,11 @@
         <p><strong>2. definimos el tema del menu</strong> que fondo va ha tener</p>
         <p>Cuando pensamos tener un 'nav' oscuro entonces utilizar <strong>navbar-dark</strong> para que programe un color claro de texto y luego agregar un color personal con 'style'</p>
         <p><strong>3. definimos lo colores con la etiqueta bg-xxx</strong> que viene con bootstrap</p>
+        <p>El '.container' que está dentro de la etiqueta 'nav' se ha convertido en un flexbox, esta clase .container' ya biene preparado para asumir estos cambios. Al inspecionar elemento podemos ver que tiene 'display:flex' y 'justify-content: space-between'</p>
+        <p>Entonces cuando nosotros querramos cambiar la alineación de estos elementos que conforman nuestra barra vamos a tener que aplicar las clases al container, ya este es el 'Padre' de los logotipos, los textos de enlace y otros del navbar. Si no utilizariamos '.container' entonces el padre sería la etiqueta 'nav'.</p>
+        <p><strong>5. El logotipo va con la clase 'navbar-brand' </strong>lo que lo hace responsive</p>
+        <p>Si queremos agrandar el tamaño del logo brand poner el texto del logo dentro de un 'span' el cual es el hijo de 'a'. Al 'span' se le asigna la clase '.h4' o similar</p>
+
     </div>
 
     <!-- Optional JavaScript -->
