@@ -19,6 +19,7 @@
     <p>¿Y a dónde va ha Apuntar o 'disparar'? Para ello le asignamos al boton otra etiqueta: <strong>data-target</strong>. data-toggle nombra al asecino y  data-target nombra a la victima. </p>
     <p>podemos hacer que la pantalla sea accesible a personas con algun tipo de discapacidad</p>
     <p>con <strong>aria-expanded=""</strong> le asignamos el estado de la victima. Cuando click en boton se expande otro click se contrae. la pregunta seria: ¿La Victima esta oculta? Cuando las " " estan vacias significa que la victima está oculta (por defecto). Cuando es "true" significa SI está oculta. Cuando es "false" significa que NO esta oculta.</p>
+    <p><strong>Creando al victima</strong> en su 'div' correspondiente poner la clase <strong>.collapse</strong> se le asigna un id="victima" que viene del data-target="#victima" del boton</p>
     <section class="container">
         <div class="row p-4 justify-content-center">
             <article class="col-sm-8">
@@ -30,7 +31,18 @@
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#victima" aria-expanded="">Ver documentacion</button>
+                    <button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#victima" aria-expanded="false">Ver documentacion</button>
+                </div>
+                <div class="collapse" id="victima">
+                    <div class="my-3 p-3 rounded bg-success text-white text-left">
+                        <h2>Requisitos para soldado</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                 </div>
             </article>
             <article class="col-sm-4">
