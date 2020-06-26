@@ -22,6 +22,7 @@
     <p><strong>Creando al victima</strong> en su 'div' correspondiente poner la clase <strong>.collapse</strong> se le asigna un id="victima" que viene del data-target="#victima" del boton</p>
     <p>Se recomienda poner a los botones o enlaces <strong>role="button"</strong> para los lectores de pantalla que ayuda a personas especiales.</p>
     <p><strong>aria-controls="victima"</strong> es una enorme ayuda para los navegadores invidentes</p>
+    <p>Si queremos que el elemento de destino esté expandido al comienzo, se le tiene añadir a la clase del contenedor de 'id="victima" la clase '.show' y en el 'aria-expanded' del boton 'Ver documentacion' poner 'true'</p>
     <section class="container">
         <div class="row p-4 justify-content-center">
             <article class="col-sm-8">
@@ -33,8 +34,8 @@
                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#victima" aria-expanded="false" aria-controls="victima">Ver documentacion</button>
-                    <div class="collapse" id="victima">
+                    <button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#victima" aria-expanded="true" aria-controls="victima">Ver documentacion</button>
+                    <div class="collapse show" id="victima">
                         <div class="my-3 p-3 rounded bg-success text-white text-left">
                             <h2>Pasos para la Inscripcion</h2>
                             <ol>
