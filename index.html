@@ -11,7 +11,7 @@
     <title>Componentes</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-primary">
+    <nav class="navbar navbar-dark bg-primary">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="imgs/rf1.svg" width="100" height="auto" alt="imagen de logo">
@@ -20,8 +20,12 @@
             <button type="button" class="navbar-toogler" data-toggle="collapse" data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar menu de navegacion"><span class="navbar-toggler-icon"></span></button>
             <!-- fin boton sandwich -->
             <!-- elemento victima -->
-            <div class="collapse" id="menu-principal">
-                reus someees
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul compact="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link acitve">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Amigos</a></li>
+                </ul>
             </div>
             <!-- fin elemento victima -->
         </div>   
@@ -29,6 +33,7 @@
     <div class="container">
         <h1>Barra de navegacion</h1>
         <p><strong>6. Creamos el menu desplegable con la clase '.collapse' </strong>creando la victima del disparador. El disparador debe apuntar a un elemento cuyo id es 'menu-principal' </p>
+        <p>debemos agregarle la etiqueta '.navbar-collapse' al div del 'id' 'menu-principal, para evitar que cuando hagamos click en el boton sandwich, el contenido de este elemento se filtre detras del boton.</p>
 
     </div>
 
