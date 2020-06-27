@@ -19,19 +19,16 @@
             <!-- boton sandwich -->
             <button type="button" class="navbar-toogler" data-toggle="collapse" data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar menu de navegacion"><span class="navbar-toggler-icon"></span></button>
             <!-- fin boton sandwich -->
+            <!-- elemento victima -->
+            <div class="collapse" id="menu-principal">
+                reus someees
+            </div>
+            <!-- fin elemento victima -->
         </div>   
     </nav>
     <div class="container">
         <h1>Barra de navegacion</h1>
-        <p>Para implementar el menu sandwich se aplica la clase '.navbar-toogler' a la etiqueta 'button'. este va ha ser el elemnto disparador a la lista del menu. click en sandwich y sale lista de menu</p>
-        <p><strong>data-toggle="collapse"</strong> le asigna al sandwich como el elemento disparador</p>
-        <p><strong>data-target="#menu-principal"</strong> es a donde apunto el disparador</p>
-        <p><strong>aria-controls="menu-principal"</strong> permite al lector de pantalla saltar directamente al contenido manipulado</p>
-        <p>El elemento victima está expandido? la respuesta es NO (false). <strong>aria-expanded="false"</strong> </p>
-        <p><strong>aria-label="Desplegar menu de navegacion"</strong>cuando un usuario cieguito navega atravez de los elementos cuando el foco este en este sandwich, el lector de pantalla de va ha decir: 'desplegar menu de navegacion'</p>
-        <p>con <strong>span y '.navbar-toogler-icon</strong> aparecen las 3 lineas del sandwich</p>
-        <p>Las 3 lineas del icono son  claros (casi blanco) porque le aplicamos la clase '.navbar-dark'. El fondo ambién tiene un gris claro. Con '.navbar-light' las lineas se hacen negras</p>
-
+        <p><strong>6. Creamos el menu desplegable con la clase '.collapse' </strong>creando la victima del disparador. El disparador debe apuntar a un elemento cuyo id es 'menu-principal' </p>
 
     </div>
 
